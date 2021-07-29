@@ -23,14 +23,11 @@ namespace WPFProject
     {
         public MainWindow()
         {
-            InitializeComponent();
-
-            this.DataContext = new MainViewModel()
+            DataContext = new MainViewModel()
             {
                 MainWindow = this
             };
-            
-
+            InitializeComponent();
         }
 
         

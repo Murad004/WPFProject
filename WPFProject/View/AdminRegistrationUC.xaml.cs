@@ -23,14 +23,10 @@ namespace WPFProject.View
     /// </summary>
     public partial class AdminRegistrationUC : UserControl
     {
+        
         public AdminRegistrationUC()
         {
             InitializeComponent();
-
-            DataContext = new AdminUserControlViewModel()
-            {
-                AdminRegistrationUC = this
-            };
         }
 
         

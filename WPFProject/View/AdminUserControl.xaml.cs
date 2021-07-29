@@ -22,13 +22,13 @@ namespace WPFProject.View
     {
         public AdminUserControl()
         {
-            
-            InitializeComponent();
 
             DataContext = new AdminUserControlViewModel()
             {
                 ucadmin = this
             };
+            InitializeComponent();
+
         }
         
     }

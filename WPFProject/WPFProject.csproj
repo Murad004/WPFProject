@@ -152,5 +152,8 @@
   <ItemGroup>
     <Resource Include="View\CinemaRed.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\MovieTime.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
