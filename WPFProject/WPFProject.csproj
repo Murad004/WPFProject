@@ -61,6 +61,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModel\AdminRegistrationViewModel.cs" />
     <Compile Include="ViewModel\UserUCViewModel.cs" />
     <Compile Include="View\AdminRegistrationUC.xaml.cs">
       <DependentUpon>AdminRegistrationUC.xaml</DependentUpon>

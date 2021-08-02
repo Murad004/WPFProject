@@ -29,8 +29,7 @@
             <TextBox Margin="5" Name="UsernameTxtBoxAdmin" Width="200" HorizontalAlignment="Left" FontSize="16"></TextBox>
             <TextBlock FontSize="22">Password</TextBlock>
             <PasswordBox Margin="5" Name="PasswordBoxAdmin" Width="200" HorizontalAlignment="Left" FontSize="16"></PasswordBox>
-            <Button Command="{Binding SignInBtn}" Foreground="SpringGreen" Width="150" HorizontalAlignment="Left" FontSize="20" Background="White" BorderThickness="1"> Sign in</Button>
-            <Button Command="{Binding RegistrationBtn}" Foreground="Orange" Margin="5" Width="200" HorizontalAlignment="Left" FontSize="20" Background="White" BorderThickness="1">Registration</Button>
+            <Button Margin="25" Command="{Binding SignInBtn}" Foreground="SpringGreen" Width="150" HorizontalAlignment="Left" FontSize="20" Background="White" BorderThickness="1"> Sign in</Button>
             
             
             

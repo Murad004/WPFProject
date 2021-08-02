@@ -21,8 +21,6 @@
                     </Setter>
                 </Style>
             </StackPanel.Style>
-
-            <TextBlock></TextBlock>
         </StackPanel>
             
     </Grid>

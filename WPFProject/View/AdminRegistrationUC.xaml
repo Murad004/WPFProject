@@ -43,7 +43,7 @@
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,100,0,0" Name="textBoxAge" VerticalAlignment="Top" Width="222" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,140,0,0" Name="textBoxEmail" VerticalAlignment="Top" Width="222" />
             <PasswordBox Height="23" HorizontalAlignment="Left" Margin="183,180,0,0" Name="PasswordBox" VerticalAlignment="Top" Width="222" />
-            <Button  Name="SignUpBtn" FontSize="10" Width="70" Height="23" Margin="183,220,0,0" HorizontalAlignment="Left" Content="Sign up">
+            <Button Command="{Binding SignUpBtn}"  Name="SignUpBtn" FontSize="10" Width="70" Height="23" Margin="183,220,0,0" HorizontalAlignment="Left" Content="Sign up">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
 

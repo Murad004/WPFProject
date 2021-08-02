@@ -26,6 +26,7 @@ namespace WPFProject.View
         
         public AdminRegistrationUC()
         {
+            DataContext = new AdminRegistrationViewModel();
             InitializeComponent();
         }
 
