@@ -9,7 +9,7 @@ namespace WPFProject.Repository
 {
     public class FakeRepoUsers
     {
-        public List<User> Users { get; set; }
+        public List<User> Users = new List<User>();
 
         public List<User> GetUsers()
         {

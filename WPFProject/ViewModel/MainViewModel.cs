@@ -18,8 +18,6 @@ namespace WPFProject.ViewModel
         public AdminUserControl AdminUC { get; set; }
         public UserUC UserUC { get; set; }
 
-        public AdminRegistrationUC AdminRegistrationUC { get; set; }
-
         public RelayCommand AdminRegistrationBtn { get; set; }
 
         public RelayCommand UserRegistrationBtn { get; set; }
@@ -33,8 +31,7 @@ namespace WPFProject.ViewModel
               });
             AdminRegistrationBtn = new RelayCommand((e) =>
             {
-                AdminRegistrationUC = new AdminRegistrationUC();
-                MainWindow.SecondGrid.Children.Add(AdminRegistrationUC);
+               
             });
             UserBtn = new RelayCommand((e) =>
               {

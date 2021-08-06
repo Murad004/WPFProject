@@ -9,7 +9,7 @@ namespace WPFProject.Repository
 {
     public class FakeRepoAdmin
     {
-        public List<Admin> Admins { get; set; }
+        public List<Admin> Admins = new List<Admin>();
 
         public List<Admin> GetAdmins()
         {

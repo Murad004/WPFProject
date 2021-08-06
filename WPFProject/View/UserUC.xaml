@@ -14,8 +14,54 @@
 
         <Border BorderBrush="DarkRed" BorderThickness="7" CornerRadius="20" Margin="20">
             <StackPanel Orientation="Vertical">
-                <Image Margin="15" Width="200" Height="200" Source="CinemaRed.png"></Image>
-                <TextBlock Margin="35" Text="Welcome to Murad Cinema" FontSize="26" Foreground="Red" FontFamily="Comic Sans MS"></TextBlock>
+                <TextBlock FontSize="35" HorizontalAlignment="Center" Margin="10" FontWeight="ExtraBlack" Foreground="DeepSkyBlue">Sign Up</TextBlock>
+                <TextBlock FontSize="25" Margin="5">Name</TextBlock>
+                <TextBlock FontSize="25" Margin="5">Surname</TextBlock>
+                <TextBlock FontSize="25" Margin="5">Age</TextBlock>
+                <TextBlock FontSize="25" Margin="5">Email</TextBlock>
+                <TextBlock FontSize="25" Margin="5">Password</TextBlock>
+                <TextBox Name="NameTxtBox" Margin="100,-380,0,0" Width="250" FontSize="19" Height="30"></TextBox>
+                <TextBox Name="SurnameTxtBox" Margin="100,-290,0,0" Width="250" FontSize="19" Height="30"></TextBox>
+                <TextBox Name="AgeTxtBox" Margin="100,-205,0,0" Width="250" FontSize="19" Height="30"></TextBox>
+                <TextBox Name="EmailTxtBox" Margin="100,-125,0,0" Width="250" FontSize="19" Height="30"></TextBox>
+                <PasswordBox Name="PasswordBox" Margin="100,-35,0,0" Width="250" FontSize="19" Height="30"></PasswordBox>
+                <DatePicker Name="DatePicker" Width="250" Margin="-150,20,0,0"></DatePicker>
+                <Button  Name="SignUpBtnUser" FontSize="20" Width="150" Height="40" Margin="60,15,50,1" HorizontalAlignment="Center" Content="Sign Up">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+
+                            <ContentControl>
+
+                                <Border Name="myborder2" BorderThickness="0">
+                                    <Border.Style>
+                                        <Style TargetType="Border">
+                                            <Setter Property="Background">
+                                                <Setter.Value>
+                                                    <LinearGradientBrush>
+                                                        <GradientStop Color="#1f4037" Offset="0"></GradientStop>
+                                                        <GradientStop Color="#99f2c8" Offset="1.5"></GradientStop>
+                                                    </LinearGradientBrush>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </Border.Style>
+                                    <ContentPresenter Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                </Border>
+
+                            </ContentControl>
+                        </ControlTemplate>
+
+                    </Button.Template>
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="FontSize" Value="20"></Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
             </StackPanel>
         </Border>
 
@@ -26,7 +72,7 @@
                 <TextBlock Margin="20,30,0,0"  FontSize="24" HorizontalAlignment="Left">Password</TextBlock>
                 <TextBox Name="UsernameTxtBoxUser" Margin="120,-90,0,60"  Width="250" FontSize="20"></TextBox>
                 <PasswordBox Name="PasswordBoxUser" Margin="120,-30,0,0" FontSize="20" Width="250"></PasswordBox>
-                <Button  Name="SignInBtnUser" FontSize="20" Width="150" Height="40" Margin="50,40,50,1" HorizontalAlignment="Center" Content="Log in">
+                <Button Command="{Binding LogInBtn}"  Name="SignInBtnUser" FontSize="20" Width="150" Height="40" Margin="50,80,50,1" HorizontalAlignment="Center" Content="Log in">
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
 
@@ -63,42 +109,7 @@
                     </Button.Style>
                 </Button>
 
-                <Button  Name="RegistrationBtnUser" FontSize="20" Width="150" Height="40" Margin="50,40,50,1" HorizontalAlignment="Center" Content="Registration">
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-
-                            <ContentControl>
-
-                                <Border Name="myborder2" BorderThickness="0">
-                                    <Border.Style>
-                                        <Style TargetType="Border">
-                                            <Setter Property="Background">
-                                                <Setter.Value>
-                                                    <LinearGradientBrush>
-                                                        <GradientStop Color="#1f4037" Offset="0"></GradientStop>
-                                                        <GradientStop Color="#99f2c8" Offset="1.5"></GradientStop>
-                                                    </LinearGradientBrush>
-                                                </Setter.Value>
-                                            </Setter>
-                                        </Style>
-                                    </Border.Style>
-                                    <ContentPresenter Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
-                                </Border>
-
-                            </ContentControl>
-                        </ControlTemplate>
-
-                    </Button.Template>
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="FontSize" Value="20"></Setter>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                </Button>
+                
             </StackPanel>
         </Border>
 
