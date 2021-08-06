@@ -13,7 +13,7 @@ namespace WPFProject.ViewModel
 {
     public class AdminUserControlViewModel : BaseViewModel
     {
-        public MainWindow MainWindow { get; set; }
+        public MainWindow MainWindow = new MainWindow();
 
         public MainViewModel MainViewModel = new MainViewModel();
 
@@ -23,6 +23,8 @@ namespace WPFProject.ViewModel
         public RelayCommand SignInBtn { get; set; }
 
         public RelayCommand SignUpBtn { get; set; }
+
+        public AdminFilmMenuUC AdminFilmMenuUC = new AdminFilmMenuUC();
 
 
         public AdminUserControlViewModel()
@@ -44,6 +46,9 @@ namespace WPFProject.ViewModel
                   ucadmin.textBoxEmail.Text = String.Empty;
                   ucadmin.DatePicker.Text = String.Empty;
                   ucadmin.PasswordBox.Password = String.Empty;
+                  MainWindow.SecondGrid.Children.Remove(ucadmin);
+                  MainWindow.SecondGrid.Children.Add(AdminFilmMenuUC);
+                  
               });
             SignInBtn = new RelayCommand((e) =>
               {

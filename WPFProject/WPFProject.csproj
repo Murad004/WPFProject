@@ -62,9 +62,33 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ViewModel\UserUCViewModel.cs" />
+    <Compile Include="View\AdminAddMovieUC.xaml.cs">
+      <DependentUpon>AdminAddMovieUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminFilmMenuUC.xaml.cs">
+      <DependentUpon>AdminFilmMenuUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AdminRemoveMovieUC.xaml.cs">
+      <DependentUpon>AdminRemoveMovieUC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserFilmMenuUC.xaml.cs">
+      <DependentUpon>UserFilmMenuUC.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\UserUC.xaml.cs">
       <DependentUpon>UserUC.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\AdminAddMovieUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminFilmMenuUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AdminRemoveMovieUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\AdminUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -94,6 +118,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="View\UserFilmMenuUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\UserUC.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -140,6 +168,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="View\MovieTime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\SearchIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
