@@ -23,6 +23,7 @@ namespace WPFProject.View
         public AdminRemoveMovieUC()
         {
             InitializeComponent();
+            Helper.Helper.AdminRemoveMovieUC = this;
         }
     }
 }

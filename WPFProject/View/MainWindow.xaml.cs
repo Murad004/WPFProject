@@ -27,6 +27,7 @@ namespace WPFProject
             {
                 MainWindow = this
             };
+            Helper.Helper.MainWindow = this;
             InitializeComponent();
             
         }

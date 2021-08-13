@@ -13,18 +13,16 @@ namespace WPFProject.ViewModel
 {
     public class AdminUserControlViewModel : BaseViewModel
     {
-        public MainWindow MainWindow = new MainWindow();
-
-        public MainViewModel MainViewModel = new MainViewModel();
+        public MainWindow MainWindow = Helper.Helper.MainWindow;
 
         public FakeRepoAdmin RepoAdmin = new FakeRepoAdmin();
 
-        public AdminUserControl ucadmin { get; set; }
+        public AdminUserControl ucadmin = Helper.Helper.AdminUserControl;
         public RelayCommand SignInBtn { get; set; }
 
         public RelayCommand SignUpBtn { get; set; }
 
-        public AdminFilmMenuUC AdminFilmMenuUC = new AdminFilmMenuUC();
+        public AdminFilmMenuUC AdminFilmMenuUC = Helper.Helper.AdminFilmMenuUC;
 
 
         public AdminUserControlViewModel()
@@ -40,15 +38,9 @@ namespace WPFProject.ViewModel
                       ucadmin.textBoxEmail.Text,
                       ucadmin.PasswordBox.Password
                       ));
-                  ucadmin.textBoxFirstName.Text = String.Empty;
-                  ucadmin.textBoxLastName.Text = String.Empty;
-                  ucadmin.textBoxAge.Text = String.Empty;
-                  ucadmin.textBoxEmail.Text = String.Empty;
-                  ucadmin.DatePicker.Text = String.Empty;
-                  ucadmin.PasswordBox.Password = String.Empty;
-                  MainWindow.SecondGrid.Children.Remove(ucadmin);
-                  MainWindow.SecondGrid.Children.Add(AdminFilmMenuUC);
                   
+                  ucadmin.SignUpBtn.IsEnabled = false;
+                  MessageBox.Show("Qeydiyyat ugurludur.Zehmet olmasa \"Sign in\" bolmesinde E-mail ve Parolunuzu daxil edin.", "Sucsesfully!", MessageBoxButton.OK, MessageBoxImage.Information);
               });
             SignInBtn = new RelayCommand((e) =>
               {
@@ -56,11 +48,15 @@ namespace WPFProject.ViewModel
                   {
                       if (ucadmin.UsernameTxtBoxAdmin.Text == admin.Email && ucadmin.PasswordBoxAdmin.Password == admin.Password)
                       {
-                          MessageBox.Show("ischbcsujbjns");
+                          MainWindow.SecondGrid.Children.Add(AdminFilmMenuUC);
+                          AdminFilmMenuUC.AdminNameTxtBlck.Text = ucadmin.textBoxFirstName.Text;
+                          AdminFilmMenuUC.AdminSurnameTxtBlck.Text = ucadmin.textBoxLastName.Text;
+                          AdminFilmMenuUC.AdminAgeTxtBlck.Text = ucadmin.textBoxAge.Text;
+
                       }
                       else
                       {
-                          MessageBox.Show("bbb");
+                          MessageBox.Show("bbb","Sucsesfully!",MessageBoxButton.OK,MessageBoxImage.Information);
                       }
                   }
               });

@@ -11,7 +11,7 @@ namespace WPFProject.ViewModel
     public class MainViewModel : BaseViewModel
     {
 
-        public MainWindow MainWindow { get; set; }
+        public MainWindow MainWindow = Helper.Helper.MainWindow;
         public RelayCommand AdminBtn { get; set; }
         public RelayCommand UserBtn { get; set; }
 

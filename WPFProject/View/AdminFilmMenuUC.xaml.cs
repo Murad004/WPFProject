@@ -23,6 +23,7 @@ namespace WPFProject.View
         public AdminFilmMenuUC()
         {
             InitializeComponent();
+            Helper.Helper.AdminFilmMenuUC = this;
         }
     }
 }

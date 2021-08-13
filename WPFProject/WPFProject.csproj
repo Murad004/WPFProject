@@ -61,6 +61,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Helper\Helper.cs" />
+    <Compile Include="ViewModel\AdminAddMovieViewModel.cs" />
+    <Compile Include="ViewModel\AdminFilmMenuViewModel.cs" />
+    <Compile Include="ViewModel\AdminRemoveMovieViewModel.cs" />
     <Compile Include="ViewModel\UserUCViewModel.cs" />
     <Compile Include="View\AdminAddMovieUC.xaml.cs">
       <DependentUpon>AdminAddMovieUC.xaml</DependentUpon>
@@ -171,6 +175,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="View\SearchIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

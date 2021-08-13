@@ -27,6 +27,7 @@ namespace WPFProject.View
             {
                 ucadmin = this
             };
+            Helper.Helper.AdminUserControl = this;
             InitializeComponent();
 
         }

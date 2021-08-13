@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:WPFProject" xmlns:ie="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
         WindowStyle="None"
+        ResizeMode="NoResize"
         Title="MainWindow" Height="600" Width="1100">
+    
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
