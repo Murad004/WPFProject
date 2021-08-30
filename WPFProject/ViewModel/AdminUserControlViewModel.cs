@@ -48,10 +48,10 @@ namespace WPFProject.ViewModel
                   {
                       if (ucadmin.UsernameTxtBoxAdmin.Text == admin.Email && ucadmin.PasswordBoxAdmin.Password == admin.Password)
                       {
-                          MainWindow.SecondGrid.Children.Add(AdminFilmMenuUC);
-                          AdminFilmMenuUC.AdminNameTxtBlck.Text = ucadmin.textBoxFirstName.Text;
-                          AdminFilmMenuUC.AdminSurnameTxtBlck.Text = ucadmin.textBoxLastName.Text;
-                          AdminFilmMenuUC.AdminAgeTxtBlck.Text = ucadmin.textBoxAge.Text;
+                          Helper.Helper.MainWindow.SecondGrid.Children.Add(Helper.Helper.AdminFilmMenuUC);
+                          Helper.Helper.AdminFilmMenuUC.AdminNameTxtBlck.Text = ucadmin.textBoxFirstName.Text;
+                          Helper.Helper.AdminFilmMenuUC.AdminSurnameTxtBlck.Text = ucadmin.textBoxLastName.Text;
+                          Helper.Helper.AdminFilmMenuUC.AdminAgeTxtBlck.Text = ucadmin.textBoxAge.Text;
 
                       }
                       else

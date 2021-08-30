@@ -19,6 +19,10 @@ namespace WPFProject.ViewModel
 
         public FakeRepoUsers RepoUsers = new FakeRepoUsers();
 
+        public UserFilmMenuUC UserFilmMenuUC = Helper.Helper.UserFilmMenuUC;
+
+        public MainWindow MainWindow = Helper.Helper.MainWindow;
+
 
         public UserUCViewModel()
         {
@@ -46,7 +50,7 @@ namespace WPFProject.ViewModel
                   {
                       if (UserUC.UsernameTxtBoxUser.Text == user.Email && UserUC.PasswordBoxUser.Password == user.Password)
                       {
-                          MessageBox.Show("bbb");
+                          MainWindow.SecondGrid.Children.Add(UserFilmMenuUC);
                       }
                       else
                       {

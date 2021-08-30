@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPFProject.ViewModel;
 
 namespace WPFProject.View
 {
@@ -23,6 +24,7 @@ namespace WPFProject.View
         public AdminFilmMenuUC()
         {
             InitializeComponent();
+            DataContext = new AdminFilmMenuViewModel();
             Helper.Helper.AdminFilmMenuUC = this;
         }
     }

@@ -31,8 +31,24 @@
                     </Button>
 
                 </StackPanel>
+                
 
             </Border>
+            <Button Command="{Binding BackBtn}" Margin="-680,320,0,0" Width="100" FontSize="22" Content="Back" Foreground="White">
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <ContentControl>
+                            <Border Name="myborder" BorderThickness="0" Background="Black">
+                                <ContentPresenter Margin="5" HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                            </Border>
+                        </ContentControl>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True"></Trigger>
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
         </StackPanel>
     </Grid>
 </UserControl>

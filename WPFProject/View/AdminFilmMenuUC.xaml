@@ -59,7 +59,7 @@
 
 
             <StackPanel Grid.Row="1">
-            <Button Foreground="White" Command=""  Name="AddMovieBtn" FontSize="23" Width="450" Height="40" Margin="60,50,50,1" HorizontalAlignment="Center" Content="Add Movie List">
+            <Button Foreground="White" Command="{Binding AddMovieListBtn}"  Name="AddMovieBtn" FontSize="23" Width="450" Height="40" Margin="60,50,50,1" HorizontalAlignment="Center" Content="Add Movie List">
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
 
